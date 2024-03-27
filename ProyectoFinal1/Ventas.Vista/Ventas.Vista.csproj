@@ -45,14 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\ProyectoFinal Desarrollo de sistemas\ProyectoFinal\Vendedor.cs">
-      <SubType>Form</SubType>
-      <Link>LoginUserVistas\Vendedor.cs</Link>
-    </Compile>
-    <Compile Include="D:\ProyectoFinal Desarrollo de sistemas\ProyectoFinal\Vendedor.Designer.cs">
-      <DependentUpon>Vendedor.cs</DependentUpon>
-      <Link>LoginUserVistas\Vendedor.Designer.cs</Link>
-    </Compile>
     <Compile Include="LoginUserVistas\LoginUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +56,24 @@
     </Compile>
     <Compile Include="LoginUserVistas\Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUserVistas\Vendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUserVistas\Vendedor.Designer.cs">
+      <DependentUpon>Vendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUserVistas\VendedorEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUserVistas\VendedorEditar.Designer.cs">
+      <DependentUpon>VendedorEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUserVistas\VendedorInsertar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUserVistas\VendedorInsertar.Designer.cs">
+      <DependentUpon>VendedorInsertar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,14 +93,29 @@
     <EmbeddedResource Include="LoginUserVistas\Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="D:\ProyectoFinal Desarrollo de sistemas\ProyectoFinal\Vendedor.resx">
+    <EmbeddedResource Include="LoginUserVistas\Vendedor.resx">
       <DependentUpon>Vendedor.cs</DependentUpon>
-      <Link>LoginUserVistas\Vendedor.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUserVistas\VendedorEditar.resx">
+      <DependentUpon>VendedorEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUserVistas\VendedorInsertar.resx">
+      <DependentUpon>VendedorInsertar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaVentas.BSS\SistemaVentas.BSS.csproj">
+      <Project>{bca8c13e-615d-402c-871e-0274ade4e6b6}</Project>
+      <Name>SistemaVentas.BSS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaVentas.Modelo\SistemaVentas.Modelo.csproj">
+      <Project>{1fc441b9-ca7b-4f60-bdd3-6b0dc6368084}</Project>
+      <Name>SistemaVentas.Modelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

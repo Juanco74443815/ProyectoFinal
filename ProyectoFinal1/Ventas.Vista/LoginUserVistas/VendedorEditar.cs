@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Ventas.Vista.LoginUserVistas
 {
-    public partial class Vendedor : Form
+    public partial class VendedorEditar : Form
     {
-        public Vendedor()
+        public VendedorEditar()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
